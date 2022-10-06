@@ -1,0 +1,307 @@
+
+{Body-init}
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="form">
+    <meta name="description" content="">
+    <meta name="page_type" content="form-generator">
+    <title>form</title>
+     <link rel="stylesheet" href="index_css.css">
+<body>
+
+{end}
+
+
+
+
+
+{form_div}
+<div id="{id}">
+
+{end}
+
+
+
+
+{form_init}
+
+<form id= "{id}" >
+
+{end}
+
+
+
+{form_label}
+  <label for="{name_input}" id="{label_id}">{string_label}</label><br>
+{end}
+
+
+
+
+
+{form_name}
+
+  <input type="text" id="{id}" name="{name_label}"><br>
+{end}
+
+{form_button}
+
+  <input type="button" id="{id}" name="{name_label}"><br>
+{end}
+
+{form_checkbox}
+
+  <input type="checkbox" id="{id}" name="{name_label}"><br>
+{end}
+
+
+{form_color}
+
+  <input type="color" id="{id}" name="{name_label}"><br>
+{end}
+
+{form_date}
+
+  <input type="date" id="{id}" name="{name_label}"><br>
+{end}
+
+{form_datetime}
+
+  <input type="datetime-local" id="{id}" name="{name_label}"><br>
+{end}
+
+{form_email}
+
+  <input type="email" id="{id}" name="{name_label}"><br>
+{end}
+
+
+{form_file}
+
+  <input type="file" id="{id}" name="{name_label}"><br>
+{end}
+
+
+{form_hidden}
+
+  <input type="hidden" id="{id}" name="{name_label}"><br>
+{end}
+
+
+
+{form_image}
+
+  <input type="image" id="{id}" name="{name_label}"><br>
+{end}
+
+{form_month}
+
+  <input type="month" id="{id}" name="{name_label}"><br>
+{end}
+
+
+
+{form_number}
+
+  <input type="number" id="{id}" name="{name_label}"><br>
+{end}
+
+
+{form_password}
+
+  <input type="password" id="{id}" name="{name_label}"><br>
+{end}
+
+
+{form_radio}
+
+  <input type="radio" id="{id}" name="{name_label}"><br>
+{end}
+
+
+{form_range}
+
+  <input type="range" id="{id}" name="{name_label}"><br>
+{end}
+
+
+
+{form_reset}
+
+  <input type="reset" id="{id}" name="{name_label}"><br>
+{end}
+
+
+
+{form_search}
+
+  <input type="search" id="{id}" name="{name_label}"><br>
+{end}
+
+
+
+{form_submit}
+
+  <input type="submit" id="{id}" name="{name_label}"><br>
+{end}
+
+
+{form_telephone}
+
+  <input type="tel" id="{id}" name="{name_label}"><br>
+{end}
+
+
+
+
+{form_time}
+
+  <input type="time" id="{id}" name="{name_label}"><br>
+{end}
+
+
+{form_url}
+
+  <input type="url" id="{id}" name="{name_label}"><br>
+{end}
+
+
+
+
+
+
+{form-end-tag}
+</form>
+{end}
+
+
+
+
+{body_ter}
+ </body>
+    </head>
+    </html>
+{end}
+
+
+
+----------------------- css -------------------
+{css_init}
+body{
+  background-color: #F3F4F5;
+  user-select: none;
+}
+
+{end}
+
+{css-id}
+
+#{id}<<
+  width: {width};
+  padding: 2px;
+  margin: 2%;
+  box-sizing: border-box;
+
+  border-radius:  5%;
+  background-color: #FFFFFF;
+  color: black;
+
+>>
+
+{end}
+
+ --------- 
+
+{css-div}
+
+#{id}<<
+    width: {width};
+  padding: 2px;
+  margin-left: {left_m};
+  margin-top: 10%;
+  box-sizing: border-box;
+  border: 2px solid #FFFFFF;
+  border-radius:  0%;
+  background-color:  #FFFFFF;
+  box-shadow: 2px 4px 2px 4px #c2c2c28a;
+
+>>
+
+{end}
+
+
+{css-input}
+
+#{id} <<
+  margin-bottom: {margin_bott};
+  margin-left: {margin_left};
+  padding: 4px;
+  width: {width};
+  height: {height};
+  border: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400px;
+  font-size: 15px;
+  transition: 0.2s ease;
+  background-color: rgba(220, 220, 220, 0.151);
+
+>>
+
+{end}
+
+
+{css-focus}
+
+input:focus{
+  border: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+{end}
+
+
+{label_css}
+
+#{label_id}<<
+ margin-left: {margin_left};
+ font-size: {font_size};
+
+>>
+
+{end}
+----------------------------------------------------
+
+needed css
+
+
+
+#{label}<<
+  font-size: 20px;
+>>
+
+input[type="text"]{
+  
+
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400px;
+  font-size: 15px;
+  transition: 0.2s ease;
+  background-color: rgba(220, 220, 220, 0.151);
+}
+
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}

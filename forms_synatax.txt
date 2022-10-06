@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="page_type" content="form-generator">
+    <title>form generate</title>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <body>
+
+
+
+
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+
+
+
+<form>
+  
+<input type="radio" id="html" name="fav_language" value="HTML">
+  
+<label for="html">HTML</label><br>
+ 
+
+ <input type="radio" id="css" name="fav_language" value="CSS">
+ 
+ <label for="css">CSS</label><br>
+ 
+
+ <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+
+<label for="javascript">JavaScript</label>
+
+
+</form>
+
+
+
+
+
+
+
+ <input type="radio" id="css" name="fav_language" value="CSS">
+ 
+ <label for="css">CSS</label><br>
+ 
+
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;  
+  border: 2px solid red;
+  border-radius: 4px;
+  background-color: #3CBC8D;
+  color: white;
+}
+
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+
+
+
+
+<input type="text">	Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">  	Displays a clickable button
